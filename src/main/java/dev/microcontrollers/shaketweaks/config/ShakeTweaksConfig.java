@@ -5,35 +5,29 @@ import dev.isxander.yacl3.api.Option;
 import dev.isxander.yacl3.api.OptionDescription;
 import dev.isxander.yacl3.api.YetAnotherConfigLib;
 import dev.isxander.yacl3.api.controller.TickBoxControllerBuilder;
-import dev.isxander.yacl3.config.ConfigEntry;
-import dev.isxander.yacl3.config.ConfigInstance;
-import dev.isxander.yacl3.config.GsonConfigInstance;
+import dev.isxander.yacl3.config.v2.api.ConfigClassHandler;
+import dev.isxander.yacl3.config.v2.api.SerialEntry;
+import dev.isxander.yacl3.config.v2.api.serializer.GsonConfigSerializerBuilder;
 import net.fabricmc.loader.api.FabricLoader;
 import net.minecraft.client.gui.screen.Screen;
 import net.minecraft.text.Text;
 
 public class ShakeTweaksConfig {
-    public static final ConfigInstance<ShakeTweaksConfig> INSTANCE = GsonConfigInstance.createBuilder(ShakeTweaksConfig.class)
-            .setPath(FabricLoader.getInstance().getConfigDir().resolve("shaketweaks.json"))
+    public static final ConfigClassHandler<ShakeTweaksConfig> CONFIG = ConfigClassHandler.createBuilder(ShakeTweaksConfig.class)
+            .serializer(config -> GsonConfigSerializerBuilder.create(config)
+                    .setPath(FabricLoader.getInstance().getConfigDir().resolve("shaketweaks.json"))
+                    .build())
             .build();
 
-    @ConfigEntry
-    public boolean disableScreenBobbing = true;
+    @SerialEntry public boolean disableScreenBobbing = true;
+    @SerialEntry public boolean disableHandBobbing = false;
+    @SerialEntry public boolean disableMapBobbing = true;
+    @SerialEntry public boolean disableHandDamage = false;
+    @SerialEntry public boolean disableScreenDamage = false;
 
-    @ConfigEntry
-    public boolean disableHandBobbing = false;
-
-    @ConfigEntry
-    public boolean disableMapBobbing = true;
-
-    @ConfigEntry
-    public boolean disableHandDamage = false;
-
-    @ConfigEntry
-    public boolean disableScreenDamage = false;
-
+    @SuppressWarnings("deprecation")
     public static Screen configScreen(Screen parent) {
-        return YetAnotherConfigLib.create(INSTANCE, ((defaults, config, builder) -> builder
+        return YetAnotherConfigLib.create(CONFIG, ((defaults, config, builder) -> builder
                 .title(Text.literal("Better View Bobbing"))
                 .category(ConfigCategory.createBuilder()
                         .name(Text.literal("Better View Bobbing"))

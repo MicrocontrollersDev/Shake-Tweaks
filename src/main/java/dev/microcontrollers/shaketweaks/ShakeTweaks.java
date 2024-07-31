@@ -6,7 +6,7 @@ import net.fabricmc.api.ModInitializer;
 public class ShakeTweaks implements ModInitializer {
 	@Override
 	public void onInitialize() {
-		ShakeTweaksConfig.INSTANCE.load();
+		ShakeTweaksConfig.CONFIG.load();
 	}
 
 }
