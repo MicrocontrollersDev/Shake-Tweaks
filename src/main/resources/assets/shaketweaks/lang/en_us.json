@@ -1,13 +1,13 @@
 {
-  "key.shake-tweaks.shake-tweaks": "Shake Tweaks",
-  "key.shake-tweaks.disable-screen-bobbing": "Disable Screen Bobbing",
-  "key.shake-tweaks.disable-screen-bobbing.description": "Disables the screen shake when moving.",
-  "key.shake-tweaks.disable-hand-bobbing": "Disable Hand Bobbing",
-  "key.shake-tweaks.disable-hand-bobbing.description": "Disables the hand shake when moving.",
-  "key.shake-tweaks.disable-map-bobbing": "Disable Map Bobbing",
-  "key.shake-tweaks.disable-map-bobbing.description": "Disables the hand shake when holding a map. Does nothing if \"Disable Hand Bobbing\" is turned on.",
-  "key.shake-tweaks.disable-screen-damage-tilt": "Disable Screen Damage Tilt",
-  "key.shake-tweaks.disable-screen-damage-tilt.description": "Disables the screen shake when taking damage.",
-  "key.shake-tweaks.disable-hand-damage-tilt": "Disable Hand Damage Tilt",
-  "key.shake-tweaks.disable-hand-damage-tilt.description": "Disables the hand shake when taking damage."
+  "shake-tweaks.shake-tweaks": "Shake Tweaks",
+  "shake-tweaks.disable-screen-bobbing": "Disable Screen Bobbing",
+  "shake-tweaks.disable-screen-bobbing.description": "Disables the screen shake when moving.",
+  "shake-tweaks.disable-hand-bobbing": "Disable Hand Bobbing",
+  "shake-tweaks.disable-hand-bobbing.description": "Disables the hand shake when moving.",
+  "shake-tweaks.disable-map-bobbing": "Disable Map Bobbing",
+  "shake-tweaks.disable-map-bobbing.description": "Disables the hand shake when holding a map. Does nothing if \"Disable Hand Bobbing\" is turned on.",
+  "shake-tweaks.disable-screen-damage-tilt": "Disable Screen Damage Tilt",
+  "shake-tweaks.disable-screen-damage-tilt.description": "Disables the screen shake when taking damage.",
+  "shake-tweaks.disable-hand-damage-tilt": "Disable Hand Damage Tilt",
+  "shake-tweaks.disable-hand-damage-tilt.description": "Disables the hand shake when taking damage."
 }
