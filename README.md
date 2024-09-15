@@ -1,3 +1,5 @@
+# Moved to https://codeberg.org/MicrocontrollersDev/ShakeTweaks
+
 # Shake Tweaks
 
 A small QOL mod that lets you alter the game's shake mechanics for the screen and hand.
